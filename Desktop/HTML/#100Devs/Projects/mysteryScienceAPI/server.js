@@ -59,6 +59,6 @@ app.get('/api/:name', (request,response) => {
 
 
 //5.set up server to listen
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
     console.log(`Signal running on Port ${PORT}`)
 })
